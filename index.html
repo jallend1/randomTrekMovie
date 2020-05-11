@@ -9,11 +9,17 @@
 </head>
 <body>
     <div id="container">
-        <h1>Random Star Trek Movie Picker</h1>
-        <img onerror='this.src = "default.png"' src="default.png" id="poster">
-        <h3 id="movieresult"></h3>
-        <p id="description"></p>
-        <button class="waves-effect waves-light btn-large">Pick a new movie</button>
+        <header>
+            <h1>Random Star Trek Movie Picker</h1>
+            <p>Details provided by:</p>
+            <a href="http://themoviedb.org"><img src="./images/tmdb.svg"></a>
+        </header>
+        <main>
+            <img onerror='this.src = "./images/default.png"' src="./images/default.png" id="poster">
+            <h3 id="movieresult"></h3>
+            <p id="description"></p>
+            <button class="waves-effect waves-light btn-large">Pick a new movie</button>
+        </main>
     </div>
     <script src="app.js"></script>
 </body>

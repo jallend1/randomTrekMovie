@@ -2,6 +2,7 @@ const $movieResult = document.querySelector('#movieresult');
 const $description = document.querySelector('#description');
 const $poster = document.querySelector('#poster');
 const $button = document.querySelector('button');
+
 const api = '';
 let totalResults;
 let page;
@@ -55,7 +56,7 @@ async function getResults(){
     });
 }
 
-document.addEventListener('click', getResults);
+$button.addEventListener('click', getResults);
 
 getResults();
 
